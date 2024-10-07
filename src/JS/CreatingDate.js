@@ -46,3 +46,10 @@ console.log(date2.toLocaleDateString("en-GB").replace(/\//g, "-"));
 // To display the date with time
 console.log(date2.toLocaleString());
 
+// To get the date in millisecond
+const ms = Date.now();
+console.log(ms);
+
+// To convert the millisecond timestamp into date
+const date5 = new Date(ms);
+console.log(date5);
