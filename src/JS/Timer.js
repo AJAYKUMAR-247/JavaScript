@@ -17,3 +17,6 @@ setInterval(function () {
       .padStart(2, "0")}:${remSec.toString().padStart(2, "0")}`
   );
 }, 1000);
+
+//cover all set{}
+
