@@ -1,4 +1,4 @@
-// ObjectConstructor is a function. it is also a object itself.
+// ObjectConstructor or function constructor is a function. it is also a object itself.
 
 function User(firstName, lastName, email) {
   this.firstName = firstName;
