@@ -40,5 +40,4 @@
 (function (date) {
   console.log(date.toLocaleString);
 })(new Date());
-
 // But it also needs a argument to be passed.

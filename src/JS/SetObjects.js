@@ -48,6 +48,31 @@ console.log(someSet2);
 const values = someSet.values();
 console.log(values);
 
+/*add(value)
+
+Adds a new value to the set. Ignores duplicates. */
+
+const mySet = new Set();
+mySet.add(1); // Set { 1 }
+
+/*has(value)
+
+Returns true if the set contains the specified value, otherwise returns false. */
+
+mySet.has(1); // true
+
+/*clear()
+
+Removes all elements from the set. */
+
+mySet.clear(); // Set is now empty
+
+/*keys()
+
+Returns a new iterator object containing the values of the set in insertion order (same as values()). */
+const iterator = mySet.keys();
+console.log(iterator);
+
 // We can loop through the iterable, because the values() method will return a iterable.
 for (const val of values) {
   console.log(val);

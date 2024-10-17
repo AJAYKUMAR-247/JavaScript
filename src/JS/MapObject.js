@@ -133,7 +133,7 @@ const values = myMap.values(); // This will also return the data as an iterator 
 console.log([...values]); // Output: [10, 20]
 
 /*entries()
-
+  
 Returns a new Iterator object that contains an array of [key, value] for each element in the Map in insertion order. */
 const entries = myMap.entries(); // This will also return the data as an iterator or Map Iterator.
 console.log([...entries]); // Output: [['x', 10], ['y', 20]]
@@ -145,4 +145,3 @@ Executes a provided function once for each key-value pair in the Map. */
 myMap.forEach((value, key) => {
   console.log(`${key}: ${value}`);
 });
-  

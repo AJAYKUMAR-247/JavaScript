@@ -117,7 +117,8 @@ console.log(mapp);
 
 const finder = arr4.find(function (value, index, array) {
   // find() method will take a callback function that will return the value.
-  console.log(value, index, array);
+  console.log(index, array);
+  return value;
 });
 
 console.log(finder);
