@@ -138,6 +138,8 @@ console.log(arr.includes("banana")); // Output: true or false
 The splice method in JavaScript is used to modify an array by adding, removing, or replacing elements.
 It changes the contents of the array in place and returns an array of the removed elements. */
 
+// This will not create an new array, instead it will modify the original array.
+
 // array.splice(start, deleteCount, item1, item2);
 const spliceFruits = arr.splice(0, 2);
 console.log(spliceFruits);

@@ -122,7 +122,6 @@ const finder = arr4.find(function (value, index, array) {
 
 console.log(finder);
 
-
 /*Array Methods
 push(element): Adds one or more elements to the end of an array.
 pop(): Removes the last element from an array.
