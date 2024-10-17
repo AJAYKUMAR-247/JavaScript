@@ -121,3 +121,15 @@ const finder = arr4.find(function (value, index, array) {
 });
 
 console.log(finder);
+
+
+/*Array Methods
+push(element): Adds one or more elements to the end of an array.
+pop(): Removes the last element from an array.
+shift(): Removes the first element from an array.
+unshift(element): Adds one or more elements to the beginning of an array.
+map(callback): Creates a new array with the results of calling a function on every element.
+filter(callback): Creates a new array with all elements that pass the test implemented by the provided function.
+reduce(callback, initialValue): Executes a reducer function on each element of the array.
+forEach(callback): Executes a provided function once for each array element.
+find(callback): Returns the value of the first element that satisfies the provided testing function. */

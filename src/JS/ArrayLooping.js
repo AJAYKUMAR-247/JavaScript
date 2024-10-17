@@ -71,3 +71,97 @@ menu.map((items) => {
   console.log(items);
   return items; // return is mandatory for map
 });
+
+// To access the items of an array.
+/*Index Access
+You can access an array element directly using its index (zero-based). */
+
+const arr = ["apple", "banana", "cherry"];
+console.log(arr[0]); // Output: 'apple'
+console.log(arr[1]); // Output: 'banana'
+
+/*Using for Loop
+You can iterate over the array using a traditional for loop. */
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+// Output: apple, banana, cherry
+
+/* Using for...of Loop
+The for...of loop allows you to iterate directly over the values of the array. */
+
+for (const fruit of arr) {
+  console.log(fruit);
+}
+// Output: apple, banana, cherry
+
+/*Using forEach Method
+The forEach method executes a provided function once for each array element. */
+
+arr.forEach((fruit) => {
+  console.log(fruit);
+});
+// Output: apple, banana, cherry
+
+/* Using map Method
+You can use the map method to create a new array by transforming each element. */
+
+const upperCaseFruits = arr.map((fruit) => fruit.toUpperCase());
+console.log(upperCaseFruits); // Output: ['APPLE', 'BANANA', 'CHERRY']
+
+/*Using filter Method
+You can use filter to access elements based on a condition, creating a new array. */
+
+const longFruits = arr.filter((fruit) => fruit.length > 5);
+console.log(longFruits); // Output: ['banana', 'cherry']
+
+/* Using find Method
+The find method returns the first element that satisfies a provided testing function. */
+
+const foundFruit = arr.find((fruit) => fruit.startsWith("b"));
+console.log(foundFruit); // Output: 'banana'
+
+/*Using Destructuring
+You can destructure an array to access its elements. */
+
+const [first, second] = arr;
+console.log(first); // Output: 'apple'
+console.log(second); // Output: 'banana'
+
+/* Using includes Method
+Check if a specific value exists in the array (returns a boolean). */
+
+console.log(arr.includes("banana")); // Output: true or false
+
+/*
+The splice method in JavaScript is used to modify an array by adding, removing, or replacing elements.
+It changes the contents of the array in place and returns an array of the removed elements. */
+
+// array.splice(start, deleteCount, item1, item2);
+const spliceFruits = arr.splice(0, 2);
+console.log(spliceFruits);
+
+/*Parameters
+start: The index at which to start changing the array.
+deleteCount: The number of elements to remove from the array starting at the start index. If set to 0, no elements are removed.
+item1, item2, ... (optional): The elements to add to the array starting at the start index. If no items are specified,
+splice will only remove elements. */
+
+/*A shallow copy of an array means creating a new array that contains references to the same elements as the original array, 
+rather than duplicating the elements themselves. This means that if the original array contains objects or nested arrays,
+changes to those objects or nested structures will be reflected in both the original and the copied array.
+
+Key Characteristics of a Shallow Copy
+References: The new array holds references to the same objects or nested arrays as the original array.
+Primitive Types: If the array contains primitive types (like numbers or strings), they are copied by value,
+meaning changes to those values in one array won't affect the other. */
+
+/*slice Method
+The slice method returns a shallow copy of a portion of an array. */
+
+const slicedFruits = arr.slice(1, 3);
+console.log(slicedFruits); // Output: ['banana', 'cherry']
+
+const spreadFruits = [...arr];
+console.log(spreadFruits); // This will also create a shallow copy of an array.   //reduce,from

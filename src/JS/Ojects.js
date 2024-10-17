@@ -54,3 +54,10 @@ let filtered = keyValues.filter(function (key) {
 });
 
 console.log(filtered);
+
+/*Object Methods
+Object.keys(obj): Returns an array of a given object's own enumerable property names.
+Object.values(obj): Returns an array of a given object's own enumerable property values.
+Object.entries(obj): Returns an array of a given object's own enumerable string-keyed property [key, value] pairs.
+Object.assign(target, ...sources): Copies the values of all enumerable properties from one or more source objects to a target object.
+Object.freeze(obj): Freezes an object, preventing new properties from being added and existing properties from being removed or changed. */
