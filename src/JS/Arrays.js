@@ -133,3 +133,6 @@ filter(callback): Creates a new array with all elements that pass the test imple
 reduce(callback, initialValue): Executes a reducer function on each element of the array.
 forEach(callback): Executes a provided function once for each array element.
 find(callback): Returns the value of the first element that satisfies the provided testing function. */
+
+
+//reduce,from

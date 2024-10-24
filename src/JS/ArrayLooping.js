@@ -166,4 +166,4 @@ const slicedFruits = arr.slice(1, 3);
 console.log(slicedFruits); // Output: ['banana', 'cherry']
 
 const spreadFruits = [...arr];
-console.log(spreadFruits); // This will also create a shallow copy of an array.   //reduce,from
+console.log(spreadFruits); // This will also create a shallow copy of an array.   m
