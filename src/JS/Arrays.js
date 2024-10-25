@@ -42,6 +42,8 @@ export default mixedArray;
 
 //we can also create Array using
 // eslint-disable-next-line no-array-constructor
+// Use this way when you're going to create an array of an specific length(known) or else use the Array literal syntax([]) to create a array
+
 const array = new Array("ajay", 23, null, undefined, "kumar", 23, 34, 45);
 console.log(array);
 
@@ -133,6 +135,5 @@ filter(callback): Creates a new array with all elements that pass the test imple
 reduce(callback, initialValue): Executes a reducer function on each element of the array.
 forEach(callback): Executes a provided function once for each array element.
 find(callback): Returns the value of the first element that satisfies the provided testing function. */
-
 
 //reduce,from

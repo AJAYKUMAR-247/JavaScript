@@ -7,6 +7,20 @@ function checkDiscount(callback) {
     callback("40% Discount");
   }, 2000);
 }
-checkDiscount(function (res) {
+checkDiscount(function (res) {  
   console.log(res);
 });
+
+
+// Another example
+function a(cb) {
+  setInterval(()=>{
+  cb("ajay");
+},3000)
+};
+
+function b(res){
+  console.log(res)
+}
+
+a(b)
