@@ -5,19 +5,47 @@ const str = "hello";
 const arr = Array.from(str); // ['h', 'e', 'l', 'l', 'o']
 console.log(arr);
 
+/*----------------------------------------------------------------------------------------------------------------- */
+
 /*Spread Operator (...)
-Used to spread elements of an iterable (like an array or a set) into a new array. */
+Used to spread elements of an iterable (like an array or a set) into a new array. 
+
+1. If you dont want to change the original array, and want to create a copy you have to use spread operator
+2. This is basically used while adding, removing or merging the arrays.*/
 
 const set = new Set([1, 2, 3]);
 const arrr = [...set]; // [1, 2, 3]
 console.log(arrr);
 
+const array12 = [1, 2, 3];
+const copy12 = [...array12];
+console.log({ copy12 });
+
+/*----------------------------------------------------------------------------------------------------------------- */
+
+/* REST operator(...)
+
+Is used to destructure a array or to pass it as a parameter in a function
+
+
+ */
+
 /* slice()
+The slice() method in JavaScript is used to extract a portion of an array without modifying the original array. 
+It returns a new array containing the selected elements.
+
 When called on an array, it can be used to create a shallow copy. You can also use it on array-like objects. */
 
 const numbers = [1, 2, 3];
 const copy = numbers.slice(); // [1, 2, 3]
 console.log(copy);
+
+/*  1. start (optional) → Index where extraction begins (inclusive).
+    2. end (optional) → Index where extraction stops (exclusive).
+    3. If end is omitted, it slices until the end of the array.
+    4.If start or end is negative, it counts from the end of the array.*/
+
+/*----------------------------------------------------------------------------------------------------------------- */
 
 /*String.prototype.split()
 Converts a string into an array by splitting it at specified delimiters. */
@@ -26,12 +54,16 @@ const strr = "a,b,c";
 const array = strr.split(","); // ['a', 'b', 'c']
 console.log(array);
 
+/*----------------------------------------------------------------------------------------------------------------- */
+
 /*JSON.parse()
 Converts a JSON string representing an array into an actual array. */
 
 const jsonString = "[1, 2, 3]";
 const array1 = JSON.parse(jsonString); // [1, 2, 3]
 console.log(array1);
+
+/*----------------------------------------------------------------------------------------------------------------- */
 
 /*Map or Set
 Both Map and Set can be converted to arrays using the spread operator or Array.from(). */
@@ -97,7 +129,10 @@ console.log(ArrayObject);
 
 // Convertion of Nested Array to an Array of Object.
 
-const arr2 = [["ajay", "kumar"], ["Ravi", "srikar"]];
+const arr2 = [
+  ["ajay", "kumar"],
+  ["Ravi", "srikar"],
+];
 
 const ArrayObject1 = arr2.map(([fname, lname]) => ({ fname, lname }));
 console.log(ArrayObject1);
